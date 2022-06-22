@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Twitter Login Bypass",
+    "description": "Skip the Login/Signup popup when scrolling twitter",
+    "version": "1.0",
+    "icons": {
+        "16": "images/twitter.png",
+        "48": "images/twitter.png",
+        "128": "images/twitter.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/twitter.png",
+            "48": "images/twitter.png",
+            "128": "images/twitter.png"
+        }
+    },
+    "content_scripts": [{
+        "matches": ["https://*.twitter.com/*"],
+        "js": ["script.js"]
+        }
+    ]
+    }
+    
